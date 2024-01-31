@@ -1,0 +1,14 @@
+:host {
+  @apply flex items-center gap-4;
+}
+
+.track-cover {
+  display: flex;
+  flex-shrink: 0;
+  width: 40px;
+  user-select: none;
+}
+
+.comma-separator {
+  user-select: none;
+}

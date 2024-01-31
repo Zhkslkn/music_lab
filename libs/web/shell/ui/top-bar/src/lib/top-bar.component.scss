@@ -1,0 +1,22 @@
+$size: 32px;
+
+:host {
+  grid-area: main-view;
+  z-index: 1;
+  @apply px-8 py-4 flex gap-4 justify-between items-center h-topBar;
+}
+
+.arrow-button {
+  border: none;
+  height: $size;
+  width: $size;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+
+  @apply bg-highlight bg-opacity-70 hover:bg-highlight text-white/70;
+  transition: all 0.3s;
+}

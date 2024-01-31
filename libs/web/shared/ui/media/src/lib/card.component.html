@@ -1,0 +1,25 @@
+<a class="card"
+   [routerLink]="routerUrl">
+  <div class="card-cover"
+       [class.is-playing]="isPlaying"
+       *ngrxLet="isMediaPlaying$ as isPlaying">
+    <as-media-cover [imageUrl]="imageUrl"
+                    [roundedImage]="roundedImage">
+    </as-media-cover>
+    <as-play-button class="play-button-overlay"
+                    [primary]="true"
+                    [large]="true"
+                    [isPlaying]="isPlaying"
+                    (togglePlay)="togglePlay.emit($event)"
+                    asClickStopPropagation>
+    </as-play-button>
+  </div>
+  <div class="card-body">
+    <div class="card-title font-bold text-white ellipsis-one-line">
+      {{ title }}
+    </div>
+    <div class="card-description text-description">
+      {{ description }}
+    </div>
+  </div>
+</a>

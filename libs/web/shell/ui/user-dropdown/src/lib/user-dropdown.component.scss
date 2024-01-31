@@ -1,0 +1,58 @@
+.user-info {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.user-dropdown {
+  border-radius: 23px;
+  @apply bg-highlight text-white bg-opacity-70 hover:bg-opacity-100 flex items-center justify-center h-8 min-w-[32px] cursor-pointer p-[2px] border-0;
+
+  figure {
+    margin: 0;
+  }
+}
+
+.rounded-img {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.dropdown-container {
+  @apply bg-highlight text-lg;
+
+  .dropdown-item {
+    @apply p-0 hover:bg-baseline hover:bg-opacity-70;
+
+    a {
+      @apply py-3 px-4 text-white text-opacity-80;
+    }
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+.btn-upgrade {
+  border: 1px solid #ffffffb3;
+  border-radius: 100vh;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  padding: 5px 32px;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-transition: all 33ms cubic-bezier(.3, 0, 0, 1);
+  transition: all 33ms ease;
+  white-space: nowrap;
+  @apply text-white bg-black;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}

@@ -1,0 +1,22 @@
+:host {
+  grid-area: nav-bar;
+  z-index: 3;
+  min-height: 0;
+  resize: horizontal;
+  overflow-x: auto;
+  min-width: 200px;
+
+  @apply w-navBar flex flex-col pt-4 bg-baseline rounded-lg;
+}
+
+.nav-link-container {
+  .nav-link {
+    border-radius: 4px;
+    height: 40px;
+
+    &.active {
+      @apply text-white bg-highlight;
+      font-weight: 600;
+    }
+  }
+}

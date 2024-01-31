@@ -1,0 +1,30 @@
+:host {
+  flex: 1;
+}
+
+.social-share-container {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  container-type: inline-size;
+}
+
+.btn-with-icon {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  gap: 0.5rem;
+}
+
+@container (max-width: 486px) {
+  .btn-with-icon span {
+    display: none;
+  }
+}
+
+@container (max-width: 207px) {
+  .btn-with-icon {
+    display: none;
+  }
+}
